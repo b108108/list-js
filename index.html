@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/list.css">
+	</head>
+	<body>
+		<div class="wrapper">
+		<div><button class="open" id="open">Download</button></div>
+	</div>
+	<form method="post" name="new-element" action="additem.php">
+		<table class="form">
+			<tr><td><span>Task</span></td>
+				<td><div>
+					<input class="new-task" id="task">
+				</div></td></tr>
+			<tr><td><span>Expires Date</span></td>
+				<td><div>
+					<input class="new-expires" id="expires">
+				</div></td></tr>
+			<tr><td><span>Status</span></td>
+				<td><div>
+					<select class="new-status" id="status" size="1">
+			    		<option selected value="Active">Active</option>
+			    		<option value="Done">Done</option>
+			   		</select>
+			   	</div></td></tr>
+			<tr><td><span>Type</span></td>
+				<td><div>
+					<select class="new-type" id="type" name="type" size="1"></select>
+				</div></td></tr>
+		</table>		
+	</form>	
+	<div class="wrapper">
+		<div><button class="add" id="add">Add Item</button></div>
+		<div><button class="delete" id="delete">Remove All</button></div>
+	</div>
+	<hr>
+	
+	<div class="showlist" id="showlist">
+		 <table class="showlist">
+		</table>
+	</div>
+
+		<script src="js/services.js"></script>
+		<script src="js/store.js"></script>
+		<script src="js/model.js"></script>
+		<script src="js/template.js"></script>
+		<script src="js/view.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
